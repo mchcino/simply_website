@@ -1,0 +1,1254 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Style */
+
+
+
+/* Universal */
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./Fonts/OpenSans-Regular.woff)  format('woff');
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+}
+
+.container {
+	width: 96.5%;
+	height: auto;
+	margin: 82px auto;
+	position: relative;
+}
+
+
+
+/* Header */
+.container .navbar {
+	background-color: #fef6eb;
+	width: 100%;
+	min-height: 82px;
+	border: 2px solid #e0c8a2;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container .navbar .title {
+	width: 10%;
+	min-height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 5%;
+}
+
+.container .navbar .title h1 {
+	font-size: 1.92rem;
+	font-weight: bold;
+}
+
+.container .navbar .menu {
+	position: absolute;
+	min-height: 60px;
+	width: 30%;
+	right: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container .navbar .menu ul li {
+	display: inline-block;
+}
+
+.container .navbar .menu ul li a {
+	color: black;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-left: 7px;
+	margin-right: 7px;
+	padding: 5px;
+}
+
+.container .navbar .menu ul li:hover a {
+	background-color: #f4d29f;
+	border-radius: 7px;
+	transition: background-color 0.3s ease;
+}
+
+
+
+/* Hero */
+.container .hero-image {
+	background-image: url(mainimage.jpg);
+	background-position: center;
+	width: 100%;
+	height: 80vh;
+	background-size: cover;
+	border: 2px solid #406651;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .hero-image .maintitle {
+	text-align: center;
+}
+
+.container .hero-image .maintitle .one {
+	font-weight: bold;
+	color: white;
+	font-size: 5vmax;
+}
+
+.container .hero-image .maintitle .two {
+	font-weight: 200;
+	font-size: 4.5vmax;
+	color: white;
+}
+
+.container .hero-image .mainbutton {
+	margin-top: 10px;
+}
+
+.container .hero-image .mainbutton a {
+	padding: 10px;
+	display: inline-block;
+	border: 2px solid white;
+	color: white;
+	text-decoration: none;
+	border-radius: 12px;
+	font-size: 1.5vmax;
+}
+
+.container .hero-image .mainbutton a:hover {
+	background-color: #406651;
+	transition: background-color 0.3s ease;
+}
+
+
+
+/* Features */
+.container .features {
+	background-color: #ebf8fe;
+	border: 2px solid #96b2b3;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .features ul {
+	width: 90%;
+	min-height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container .features ul li {
+	display: flex;
+	flex-direction: column;
+	min-height: 300px;
+	background-color: #c7ecfc;
+	border: 2px solid #8fc0c7;
+	flex: 1;
+	margin: 10px;
+}
+
+.container .features ul .one {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.container .features ul .one img {
+	width: 30%;
+	border: 2px solid black;
+	border-radius: 50%;
+}
+
+.container .features ul .one h3 {
+	padding: 20px;
+	font-weight: bold;
+	font-size: 1.53rem;
+	text-align: center;
+}
+
+.container .features ul .one p {
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.container .features ul .two {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.container .features ul .two img {
+	width: 30%;
+	border: 2px solid black;
+	border-radius: 50%;
+}
+
+.container .features ul .two h3 {
+	padding: 20px;
+	font-weight: bold;
+	font-size: 1.53rem;
+	text-align: center;
+}
+
+.container .features ul .two p {
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.container .features ul .three {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.container .features ul .three img {
+	width: 30%;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.container .features ul .three h3 {
+	font-size: 1.53rem;
+	font-weight: bold;
+	padding: 20px;
+	text-align: center;
+}
+
+.container .features ul .three p {
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+
+
+/* Primary Content */
+.container .primary-content {
+	width: 100%;
+	background-color: #f7e7ea;
+	border: 2px solid #c494a0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .primary-content .content {
+	flex: 0.8;
+	margin: 50px 0;
+	background-color: #f7d4db;
+	border: 2px solid #c494a0;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container .primary-content .content h3 {
+	font-weight: bold;
+	font-size: 2.30rem;
+	text-align: center;
+}
+
+.container .primary-content .content .underlined {
+	width: 25%;
+	height: 3px;
+	background-color: #87ceeb;
+	margin: 1.3rem;
+}
+
+.container .primary-content .content p {
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.container .primary-content .content .vid {
+	width: 100%;
+	border-radius: 20px;
+	margin-top: 60px;
+}
+
+
+
+/* Secondary Content */
+.container .secondary-content {
+	background-color: #f4edfd;
+	border: 2px solid #b1a2bf;
+	width: 100%;
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.container .secondary-content .content {
+	width: 73%;
+	min-height: 360px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container .secondary-content .content .one {
+	width: 47%;
+	background-color: #e4d6f7;
+	margin-right: 7px;
+	border: 2px solid #b1a2bf;
+	position: relative;
+}
+
+.container .secondary-content .content .one .information {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px;
+}
+
+.container .secondary-content .content .one .information h4 {
+	font-weight: bold;
+	font-size: 1.69rem;
+	text-align: center
+}
+
+.container .secondary-content .content .one .information .underlined {
+	width: 40%;
+	height: 4px;
+	background-color: #87ceeb;
+	margin: 1.3rem;
+}
+
+.container .secondary-content .content .one .information p {
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.container .secondary-content .content .one .button {
+	margin: 30px 0 20px;
+}
+
+.container .secondary-content .content .one .button a {
+	padding: 5px 20px;
+	font-size: 1rem;
+	color: #6ca6cd;
+	text-decoration: none;
+	border: 2px solid #6ca6cd;
+	border-radius: 7px;
+}
+
+.container .secondary-content .content .one .button a:hover {
+	background-color: #6ca6cd;
+	border: 2px solid #6ca6cd;
+	color: white;
+	transition: background-color 0.3s ease;
+}
+
+.container .secondary-content .content .one .img {
+	background: url(secondimage1.jpg);
+	background-size: cover;
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	padding: 3px;
+}
+
+.container .secondary-content .content .two {
+	background-color: #e4d6f7;
+	width: 47%;
+	margin-left: 7px;
+	border: 2px solid #b1a2bf;
+	position: relative;
+}
+
+.container .secondary-content .content .two .information {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 40px 20px;
+}
+
+.container .secondary-content .content .two .information h4 {
+	font-size: 1.69rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.container .secondary-content .content .two .information .underlined {
+	width: 40%;
+	height: 4px;
+	background-color: #87ceeb;
+	margin: 1.3rem;
+}
+
+.container .secondary-content .content .two .information p {
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.container .secondary-content .content .two .information .button {
+	margin: 30px 0 20px;
+}
+
+.container .secondary-content .content .two .information .button a {
+	color: #6ca6cd;
+	text-decoration: none;
+	font-size: 1rem;
+	padding: 5px 20px;
+	border: 2px solid #6ca6cd;
+	border-radius: 7px;
+}
+
+.container .secondary-content .content .two .information .button a:hover {
+	background-color: #6ca6cd;
+	border: 2px solid #6ca6cd;
+	color: white;
+	transition: background-color 0.3s ease;
+}
+
+.container .secondary-content .content .two .img {
+	background: url(secondimage2.jpg);
+	background-size: cover;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 3px;
+}
+
+
+
+/* Cta */
+.container .cta {
+	padding: 60px 0;
+	width: 100%;
+	background-color: #fbfcea;
+	border: 2px solid #d7dbb6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .cta .callinfo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+	text-align: center;
+}
+
+.container .cta .callinfo h3 {
+	font-size: 2.30rem;
+	font-weight: bold;
+}
+
+.container .cta .callinfo .underlined {
+	width: 26%;
+	height: 4px;
+	background-color: #87ceeb;
+	margin: 1.3rem;
+}
+
+.container .cta .callinfo p {
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.container .cta .callinfo .button {
+	margin-top: 50px;
+}
+
+.container .cta .callinfo .button a {
+	padding: 10px 20px;
+	color: #6ca6cd;
+	text-decoration: none;
+	border: 2px solid #6ca6cd;
+	border-radius: 9px;
+}
+
+.container .cta .callinfo .button a:hover {
+	background-color: #6ca6cd;
+	border: 2px solid #6ca6cd;
+	color: white;
+	transition: background-color 0.3s ease;
+}
+
+
+
+/* Footer */
+.container .footer {
+	width: 100%;
+	padding: 60px 0;
+	background-color: #f6e6f1;
+	border: 2px solid #d1a2c1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+}
+
+.container .footer .mainfooter {
+	width: 76%;
+	min-height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#links:hover {
+	text-decoration: underline;
+}
+
+.container .footer .mainfooter .footerinfo {
+	flex: 1;
+	background-color: #f4d4e9;
+	border: 2px solid #d1a2c1;
+	padding: 40px;
+	min-height: 250px;
+	margin: 6.5px;
+}
+
+.container .footer .mainfooter .footerinfo p {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.container .footer .mainfooter .footerinfo a {
+	color: #6ca6cd;
+	text-decoration: none;
+}
+
+.container .footer .mainfooter .footerlinks {
+	background-color: #f4d4e9;
+	flex: 1;
+	border: 2px solid #d1a2c1;
+	margin: 6.5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container .footer .mainfooter .footerlinks h5 {
+	font-size: 1.15rem;
+	font-weight: bold;
+	line-height: 2;
+}
+
+.container .footer .mainfooter .footerlinks ul li a {
+	font-size: 1rem;
+	line-height: 2;
+	text-decoration: none;
+	color: #6ca6cd;
+}
+
+.container .footer .mainfooter .footerlinks .one {
+	flex: 1;
+	min-height: 200px;
+	background-color: #f2c4e1;
+	border: 2px solid #d1a2c1;
+	margin: 5px;
+	padding: 20px;
+}
+
+.container .footer .mainfooter .footerlinks .two {
+	flex: 1;
+	min-height: 200px;
+	background-color: #f2c4e1;
+	border: 2px solid #d1a2c1;
+	margin: 5px;
+	padding: 20px;
+}
+
+.container .footer .mainfooter .footerlinks .three {
+	flex: 1;
+	min-height: 200px;
+	background-color: #f2c4e1;
+	border: 2px solid #d1a2c1;
+	margin: 5px;
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media query untuk perangkat mobile */
+@media (max-width: 446px) {
+
+	html {
+		font-size: 14px;
+	}
+
+	.container {
+	  margin: 40px auto;
+	  width: 100%;
+	}
+
+	#none {
+	  border-left: none;
+	  border-right: none;
+	}
+
+	.container .navbar {
+		min-height: 55px;
+	}
+
+	.container .navbar .title {
+		left: 9%;
+	}
+
+	.container .navbar .title h1 {
+		font-size: 1rem;
+	}
+	
+	.container .navbar .menu {
+  	position: absolute;
+  	width: 85%;
+  	right: -8%;
+  }
+  
+  .container .navbar .menu ul li a {
+		font-size: 0.6rem;
+  	font-weight: bold;
+  	margin-left: 0;
+  	margin-right: 0;
+  	padding: 5px;
+  }
+
+	#features-img {
+		width: 45%;
+	}
+
+	.container .secondary-content .content {
+		flex-direction: column;
+		width: 80%;
+	}
+
+	.container .secondary-content .content .one {
+		width: 100%;
+		margin: 20px 0;
+	}
+	.container .secondary-content .content .two {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.container .secondary-content .content .one .img {
+		background: url(secondimage1.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .one .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		margin-top: 450px;
+	}
+
+	.container .secondary-content .content .two .img {
+		background: url(secondimage2.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .two .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 450px;
+		padding: 20px;
+	}
+
+	.container .cta .callinfo {
+		width: 80%;
+	}
+
+}
+
+
+
+
+
+/* Media query untuk perangkat mobile */
+@media (min-width: 447px) and (max-width: 600px) {
+
+	html {
+		font-size: 14px;
+	}
+
+	.container {
+	  margin: 40px auto;
+	  width: 100%;
+	}
+	
+	#none {
+	  border-left: none;
+	  border-right: none;
+	}
+	
+	.container .navbar {
+		min-height: 55px;
+	}
+
+	.container .navbar .title h1 {
+		font-size: 1rem;
+		left: 10%;
+	}
+	
+	.container .navbar .menu {
+  	position: absolute;
+  	width: 70%;
+  	right: -7%;
+  }
+  
+  .container .navbar .menu ul li a {
+		font-size: 0.6rem;
+  	font-weight: bold;
+  	margin-left: 3px;
+  	margin-right: 3px;
+  	padding: 5px;
+  }
+
+	#features-img {
+		width: 50%;
+	}
+  
+  .container .primary-content {
+	min-height: 0;
+	}
+
+	.container .primary-content .content {
+		width: 90%;
+		margin: 50px 0;
+	}
+
+	.container .primary-content .content h3 {
+		font-weight: bold;
+		font-size: 2.30rem;
+		text-align: center;
+	}
+
+	.container .secondary-content .content {
+		flex-direction: column;
+		width: 80%;
+	}
+
+	.container .secondary-content .content .one {
+		width: 100%;
+		margin: 20px 0;
+	}
+	.container .secondary-content .content .two {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.container .secondary-content .content .one .img {
+		background: url(secondimage1.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .one .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		margin-top: 320px;
+	}
+
+	.container .secondary-content .content .two .img {
+		background: url(secondimage2.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .two .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 320px;
+		padding: 20px;
+	}
+
+	.container .cta .callinfo {
+		width: 75%;
+	}
+	
+}
+
+
+
+
+
+/* Media query untuk perangkat mobile sampai tablet */
+@media (min-width: 601px) and (max-width: 840px) {
+
+	.container {
+		margin: 65px auto;
+	}
+
+	.container .navbar {
+		min-height: 65px;
+	}
+
+	.container .navbar .title {
+		left: 10%;
+	}
+	
+	.container .navbar .menu {
+  	position: absolute;
+  	width: 70%;
+  	right: -7%;
+  }
+  
+  .container .navbar .menu ul li a {
+		font-size: 0.8rem;
+  	font-weight: bold;
+  	margin-left: 3px;
+  	margin-right: 3px;
+  	padding: 5px;
+  }
+
+	#features-img {
+		width: 45%;
+	}
+
+	.container .secondary-content .content {
+		flex-direction: column;
+	}
+
+	.container .secondary-content .content .one {
+		width: 100%;
+		margin: 20px 0;
+	}
+	.container .secondary-content .content .two {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.container .secondary-content .content .one .img {
+		background: url(secondimage1.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .one .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		margin-top: 280px;
+	}
+
+	.container .secondary-content .content .two .img {
+		background: url(secondimage2.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .two .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 280px;
+		padding: 20px;
+	}
+
+}
+
+
+
+
+
+/* Media query untuk tablet portrait */
+@media (min-width: 841px) and (max-width: 1000px) {
+
+	.container {
+		margin: 65px auto;
+	}
+
+  .container .navbar {
+		min-height: 65px;
+	}
+	
+	.container .navbar .menu {
+  	position: absolute;
+  	width: 70%;
+  	right: -15%;
+  }
+  
+  .container .navbar .menu ul li a {
+		font-size: 0.8rem;
+  	font-weight: bold;
+  	margin-left: 3px;
+  	margin-right: 3px;
+  	padding: 5px;
+  }
+
+	#features-img {
+		width: 45%;
+	}
+
+	.container .secondary-content .content {
+		flex-direction: column;
+	}
+
+	.container .secondary-content .content .one {
+		width: 100%;
+		margin: 20px 0;
+	}
+	.container .secondary-content .content .two {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.container .secondary-content .content .one .img {
+		background: url(secondimage1.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .one .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		margin-top: 240px;
+	}
+
+	.container .secondary-content .content .two .img {
+		background: url(secondimage2.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .two .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 240px;
+		padding: 20px;
+	}
+
+}
+
+
+
+
+
+/* Media query untuk tablet landscape dan desktop kecil */
+@media (min-width: 1001px) and (max-width: 1463px) {
+
+	.container {
+		margin: 65px auto;
+	}
+
+	.container .navbar {
+		min-height: 65px;
+	}
+	
+	.container .navbar .menu {
+  	position: absolute;
+  	width: 70%;
+  	right: -15%;
+  }
+  
+  .container .navbar .menu ul li a {
+		font-size: 0.8rem;
+  	font-weight: bold;
+  	margin-left: 3px;
+  	margin-right: 3px;
+  	padding: 5px;
+  }
+
+	#features-img {
+		width: 40%;
+	}
+
+	.container .secondary-content .content .one .img {
+		background: url(secondimage1.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .one .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		margin-top: 350px;
+	}
+
+	.container .secondary-content .content .two .img {
+		background: url(secondimage2.jpg);
+		background-size: cover;
+		position: absolute;
+		background-position: center;
+		width: 100%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		padding: 3px;
+	}
+
+	.container .secondary-content .content .two .information {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 350px;
+		padding: 20px;
+	}
+
+}
+
+
+
+
+
+/* Media query untuk dekstop */
+@media (min-width: 1170px) and (max-width: 1489px) {
+
+	.container .footer .mainfooter {
+		width: 98%;
+		flex-direction: row;
+	}
+
+}
+
+
+
+
+
+/* Media query untuk desktop */
+@media (min-width: 1490px) and (max-width: 1600px) {
+	
+  .container .navbar .menu ul li a {
+		font-size: 0.8rem;
+  	font-weight: bold;
+  	margin-left: 3px;
+  	margin-right: 3px;
+  	padding: 5px;
+  }
+
+	.container .footer .mainfooter {
+		width: 78%;
+		flex-direction: row;
+	}
+
+}
+
+
+
+
+
+/* Media query untuk desktop besar */
+@media (min-width: 1601px) and (max-width: 1630px) {
+
+	html {
+		font-size: 1.125rem;
+	}
+
+	.container .footer .mainfooter {
+		width: 78%;
+		flex-direction: row;
+	}
+
+}
+
+
+
+
+
+/* Media query untuk desktop besar  */
+@media (min-width: 1631px) and (max-width: 2000px) {
+
+	html {
+		font-size: 1.125rem;
+	}
+
+	.container .footer .mainfooter {
+		flex-direction: row;
+	}
+}
+
+
+
+
+
+/* Media query untuk desktop besar 4K */
+@media (min-width: 2001px) {
+	
+	html {
+		font-size: 1.25rem;
+	}
+
+	.container .footer .mainfooter {
+		flex-direction: row;
+	}
+
+}
